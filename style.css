@@ -1,0 +1,138 @@
+*{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    box-sizing: border-box;
+}
+body{
+    padding: 0;
+    margin: 0;
+}
+#container{
+    position: relative;
+}
+
+#menu-bar{
+    display: flex;
+    align-items: center;
+    background-color: dodgerblue;
+    height: 70px;
+    
+    padding:5px 12px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    justify-content: space-between;
+    border-bottom: 3px solid black;
+    box-shadow: 0 0 20px 0 rgb(45, 44, 44);
+}
+
+#logo-bar{
+    display: flex;
+    align-items: center
+}
+
+#bar-btn{
+    border: none;
+    background: transparent;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    display: none;
+    cursor: pointer;
+    color: #323232;
+}
+
+#logo{
+    margin: 0 0;
+    color: #323232;
+    font-size: 40px;
+    margin-left: 30px;
+}
+
+#menu-bar-buttons{
+    display: flex;
+    gap: 24px;
+    margin-right: 21px;
+   
+}
+#menu-bar-buttons button{
+    border: none;
+    color: #323232;
+    background: transparent;
+    cursor: pointer;
+    font-size: 20px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+#menu-box{
+    background:white;
+    padding: 5px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+    flex-direction:column;
+    box-shadow: 0 0 10px 0 #4c7fee; 
+    margin-top: 80px;
+    border: 2px solid rgb(68, 104, 222);
+}
+#menu-box button:hover{
+    border: 1px solid gray;
+    box-shadow:0 0 10px 0 #4c7fee;
+    font-size: 15px; 
+}
+#menu-box button{
+    background:transparent;
+    border: none;
+    padding: 6px 28px;
+    color: rgb(8, 122, 236);
+    cursor: pointer;
+}
+#right-logo{
+    padding: 0;
+    margin: 0;
+    display: none;
+    color: #323232;
+    font-size: 40px;  
+}
+
+#bar-icon{
+    font-size: 32px;
+}
+
+@media(max-width: 750px){
+    #menu-bar-buttons
+    {
+      display: none;  
+    }
+    #menu-box{
+        display: none;
+    }
+    #logo{
+        display: none;
+    }
+
+    #bar-btn{
+        display: block;
+        margin-left: 27px;
+    }
+    #right-logo{
+        display: block;
+        padding: 0;
+        margin: 0;
+        
+    }
+}
+@media(max-width: 400px){
+    #bar-icon{
+        margin-left:0px;
+        padding: 0;
+        font-size: 15px;
+    }
+    #right-logo{
+        display: block;
+        padding: 0;
+        margin: 0;
+        font-size: 15px;
+    }
+}
